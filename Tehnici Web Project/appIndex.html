@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="appStyles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/ico">
+</head>
+
+<body>
+    <img src="images/red_abstract_background2.jpg" class="bg">
+    <nav class="menu">
+        <!-- <img class="logo__image logo__image" src="images/crontroller.png" alt="controller.png"> -->
+        <ul id="rel" class="menu__list">
+
+            <li id="abs" class="menu__group_logo">
+                <img src="images/crontroller.png" alt="controller.png" class="logo__image">
+            </li>
+
+            <li class="menu__group">
+                <a href="/mainPage.html" class="menu__link">Home Page</a>
+            </li>
+            <li class="menu__group">
+                <a href="/handGames.html" class="menu__link">Hand Games</a>
+            </li>
+            <li class="menu__group">
+                <a href="/appIndex.html" class="menu__link">Rock-Paper-Scissors</a>
+            </li>
+            <li class="menu__group">
+                <a href="/others.html" class="menu__link">Others</a>
+            </li>
+            <li class="menu__group">
+                <a href="/moreJS.html" class="menu__link">Features</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Can you beat the computer?!</h1>
+        <br>
+        <h2>Make your move and then the computer will make it's move!</h2>
+    </header>
+
+    <div id="page-wrap-game" class="text">
+        <div class="score-board">
+            <div id="user-label" class="badge">user</div>
+            <div id="computer-label" class="badge">comp</div>
+            <span id="user-score">0</span> : <span id="computer-score">0</span>
+        </div>
+
+        <div class="result">
+            <p>You have to go first !</p>
+        </div>
+
+        <div class="choices">
+            <div class="choice" id="r">
+                <img src="images/rock.png" alt="">
+            </div>
+            <div class="choice" id="p">
+                <img src="images/paper.png" alt="">
+            </div>
+            <div class="choice" id="s">
+                <img src="images/scissors.png" alt="">
+            </div>
+        </div>
+        <p id=action-message>Make your move.</p>
+    </div>
+    <footer class="text-h1">
+            © All rights reserved to Nastase Alexandru.
+        </footer>
+    <script src="appScripts.js"></script>
+</body>
+
+</html>
