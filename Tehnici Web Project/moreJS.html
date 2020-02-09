@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Website Features</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/ico">
+
+</head>
+
+<body>
+    <img src="images/abstract_orange_juice.png" class="bg">
+    <nav class="menu">
+        <ul id="rel" class="menu__list">
+
+            <li id="abs" class="menu__group_logo">
+                <img src="images/crontroller.png" alt="controller.png" class="logo__image">
+            </li>
+
+            <li class="menu__group">
+                <a href="/mainPage.html" class="menu__link">Home Page</a>
+            </li>
+            <li class="menu__group">
+                <a href="/handGames.html" class="menu__link">Hand Games</a>
+            </li>
+            <li class="menu__group">
+                <a href="/appIndex.html" class="menu__link">Rock-Paper-Scissors</a>
+            </li>
+            <li class="menu__group">
+                <a href="/others.html" class="menu__link">Others</a>
+            </li>
+            <li class="menu__group">
+                <a href="/moreJS.html" class="menu__link">Features</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 id="page-wrap" class="text-h1">These are the latest website's FEATURES</h1>
+    <div id="page-wrap" class="text">
+        <h3 class="ul-li">Dear ladies and gentlemen, let us introduce our latest features ! We all love features, don't
+            we? Well then here are the top features of our website : </h3>
+        <br>
+        <h4 class="ul-li">Let's see if this is your day to play some HAND GAMES! Click the button below to find out if
+            NOW is a good day to play!</h4>
+        <br>
+        <button id="date" class="myNewButton" onclick="showDay()">PLAY?</button>
+        <br>
+        <br>
+        <h4 class="ul-li">Now let us proceed to the next feature of the website! Let us see if there are only children
+            navigating by now, and see if there's any "Alex" or "Carl" in them!. Click on the bottom below to check if
+            it's true or not that there are only children now!
+        </h4>
+        <br>
+        <button id="audienceButton" class="myNewButton" onclick="checkAudience()">Children Only?</button>
+        <button id="audienceButton2" class="myNewButton" onclick="checkNames()">Alex, are you there?!</button>
+        <button id="audienceButton3" class="myNewButton" onclick="checkNames2()">Carl, are you there?!</button>
+        <br>
+        <br>
+        <h4 class="ul-li">What are the most preffered color of this website?</h4>
+        <button onmousemove="showCoords(event)" onmouseout="clearCoor()" onclick="orange()" id="orange"
+            class="preffered-colors-div orange""></button>
+        <button onmousemove=" showCoords(event)" onmouseout="clearCoor()" onclick="pink()" id="pink"
+            class="preffered-colors-div pink"></button>
+        <button onmousemove="showCoords(event)" onmouseout="clearCoor()" onclick="violet()" id="violet"
+            class="preffered-colors-div violet"></button>
+        <p>The computed background color for the test div is: <span id="showColor"></span></p>
+        <br>
+        <p id="demo"></p>
+        <br>
+        <h4 class="ul-li">Now change them!!</h4>
+        <br>
+        <button onclick="changeColorOrange()" class="myNewButton">Change that orange!</button>
+        <button onclick="changeColorPink()" class="myNewButton">Change that pink!</button>
+        <button onclick="changeColorViolet()" class="myNewButton">Change that violet!</button>
+        <br>
+        <br>
+        <h4 class="ul-li">BE CAREFUL, KIDS! Don't click on any link you see, you can get viruses!</h4>
+        <br>
+        <a onclick="prevent()" id="stop" href="https://www.google.com" class="myNewButton">Go to www.DeadPeople.com</a>
+        <br>
+        <br>
+        <div id="myDiv2">
+            <h2>try to click on the WHITE one haha</h2>
+            <p id="myP2">Click me!</p>
+        </div>
+        <br>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+        <br>
+        <button onclick="movenot()" class="myNewButton">Click Me</button>
+        <h4 id="myBarText" class="ul-li"></h4>
+        <br>
+        <div id="myProgress2">
+            <div id="myBar2"></div>
+        </div>
+        <br>
+
+        <button onclick="move()" class="myNewButton">Click Me</button>
+        <br>
+        <br>
+        <br>
+        <h4 id="myBarText2" class="ul-li"></h4>
+
+
+        <input type="text" id="myText" value="Some text...">
+        <h4 class="ul-li">Tell us what is your favourite Hand Game in the text box above! and then see your result!</h4>
+        <br>
+        <button onclick="feedback1()" class="myNewButton">See your result!</button>
+        <br>
+        <br>
+        <h4 id="fb1" class="ul-li"></h4>
+        <form>
+            <input onclick="feedback2()" id="r1" type="radio" name="age" value="1"> Pretty good<br>
+            <input onclick="feedback3()" id="r2" type="radio" name="age" value="2"> Very goood!<br>
+            <input onclick="feedback4()" id="r3" type="radio" name="age" value="3"> Amaziiing!!!<br>
+            <br>
+            <br>
+        </form>
+        <h4 id="fb2" class="ul-li"></h4>
+        <h4 id="fb3" class="ul-li"></h4>
+        <h4 id="fb4" class="ul-li"></h4>
+
+        <div class="div2">
+            <span onclick="this.parentElement.style.display = 'none';" class="closebtn">&times;</span>
+            <p>This website sucks and it's not even fun blahblah</p>
+        </div>
+
+        <nav>
+            <a id="anc"href="https://unknownclepsydra.com" target="_blank">Best T-Shirts & Hoodies!</a> 
+            <p id="para"></p>
+          </nav>
+
+          <p id="t"></p>
+          <p id="demo"></p>
+          
+          <input type="radio" id="b">STOP IT</input>
+          <input type="radio" id="b2">SCARE ME!</input>
+    </div>
+
+
+
+    <script>
+        document.getElementById("stop").addEventListener("click", function (event) {
+            event.preventDefault()
+        });
+        document.getElementById("myP2").addEventListener("click", function () {
+            alert("got you, the white was after violet haha!");
+        }, true);
+
+        document.getElementById("myDiv2").addEventListener("click", function () {
+            alert("FOOL! did u think that's the white?? ");
+        }, true);
+    </script>
+
+    <footer class="text-h1">
+        © All rights reserved to Nastase Alexandru.
+    </footer>
+    <script src="/pagesScripts.js"></script>
+</body>
+
+</html>

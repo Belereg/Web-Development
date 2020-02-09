@@ -1,0 +1,26 @@
+[
+  {
+    "picture": {
+      "caption": "Picture 1",
+      "source": "images/paper.png"
+    }
+  },
+  {
+    "picture": {
+      "caption": "Picture 1",
+      "source": "images/rock.png"
+    }
+  },
+  {
+    "picture": {
+      "caption": "Picture 1",
+      "source": "images/scissors.png"
+    }
+  },
+  {
+    "picture": {
+      "caption": "Picture 1",
+      "source": "images/rock.png"
+    }
+  }
+]
